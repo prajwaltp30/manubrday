@@ -1,0 +1,123 @@
+.virtual-ride-container {
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ec, #e0f7fa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.ride-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 1.5rem;
+  max-width: 90vw;
+  word-wrap: break-word;
+}
+
+.ride-input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #d63384;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.ride-button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #d63384;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.ride-button:hover {
+  background-color: #c2185b;
+}
+
+.ride-loading {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #6a1b9a;
+  animation: pulse 1.2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.ride-gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.ride-gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ride-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.ride-caption {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00796b;
+  animation: fadeIn 1s ease forwards;
+  max-width: 90vw;
+  word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .ride-heading {
+    font-size: 1.6rem;
+  }
+  .ride-input, .ride-button {
+    width: 100%;
+    max-width: none;
+  }
+  .ride-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+  .ride-gallery img {
+    height: 140px;
+  }
+  .ride-caption {
+    font-size: 1.2rem;
+  }
+}

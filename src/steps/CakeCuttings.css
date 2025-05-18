@@ -1,0 +1,41 @@
+.cake-cutting-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-title {
+  font-size: 2rem;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.cake-gif {
+  width: 250px;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.6);
+}
+
+.cut-button,
+.next-button {
+  background: #ff69b4;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cut-button:hover,
+.next-button:hover {
+  background: #ff1493;
+}
