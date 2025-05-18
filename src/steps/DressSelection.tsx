@@ -8,60 +8,60 @@ const dressOptions: Record<
   Traditional: [
     {
       id: 'trad1',
-      image: '/dresses/traditional.webp',
+      image: '/dresses/traditional.jpg',
       link: 'https://example.com/traditional1',
     },
     {
       id: 'trad2',
-      image: '/dresses/traditional2.webp',
+      image: '/dresses/traditional2.jpg',
     },
     {
       id: 'trad3',
-      image: '/dresses/traditional3.webp',
+      image: '/dresses/traditional3.jpg',
       link: 'https://example.com/traditional3',
     },
     {
       id: 'trad4',
-      image: '/dresses/traditional4.webp',
+      image: '/dresses/traditional4.jpg',
     },
   ],
   Prom: [
     {
       id: 'prom1',
-      image: '/dresses/prom1.webp',
+      image: '/dresses/prom1.jpg',
     },
     {
       id: 'prom2',
-      image: '/dresses/prom2.webp',
+      image: '/dresses/prom2.jpg',
       link: 'https://example.com/prom2',
     },
     {
       id: 'prom3',
-      image: '/dresses/prom3.webp',
+      image: '/dresses/prom3.jpg',
     },
     {
       id: 'prom4',
-      image: '/dresses/prom4.webp',
+      image: '/dresses/prom4.jpg',
       link: 'https://example.com/prom4',
     },
   ],
   Casual: [
     {
       id: 'casual1',
-      image: '/dresses/casual1.webp',
+      image: '/dresses/casual1.jpg',
       link: 'https://example.com/casual1',
     },
     {
       id: 'casual2',
-      image: '/dresses/casual2.webp',
+      image: '/dresses/casual2.jpg',
     },
     {
       id: 'casual3',
-      image: '/dresses/casual3.webp',
+      image: '/dresses/casual3.jpg',
     },
     {
       id: 'casual4',
-      image: '/dresses/casual4.webp',
+      image: '/dresses/casual4.jpg',
     },
   ],
 }
